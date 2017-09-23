@@ -50,11 +50,11 @@ database.ref().on("child_added", function(snapshot) {
 
       console.log(snapshot.val().rate);
 
-      $("#dynamic-row").append("<div class='well'><span id='name-display'> " + snapshot.val().name +
-        " </span><span id='role-display'> " + snapshot.val().role +
-        " </span><span id='date-display'> " + snapshot.val().date +
-        " </span><span id='monthsworked-display'> " + "" + " </span><span id='rate-display'>" + snapshot.val().rate +
-         "</span><span id='totalbilled-display>"+""+"</span></div>");
+      $("#dynamic-row").append("<tr><td id='name-display'> " + snapshot.val().name +
+        " </td><td id='role-display'> " + snapshot.val().role +
+        " </td><td id='date-display'> " + snapshot.val().date +
+        " </td><td id='monthsworked-display'> " + "" + " </td><td id='rate-display'>" + snapshot.val().rate +
+         "</td><td id='totalbilled-display>"+""+"</td></tr>");
 
       // Change the HTML to reflect
 
